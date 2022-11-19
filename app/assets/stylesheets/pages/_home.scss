@@ -17,10 +17,10 @@
 
 .expand {
   font-size: 48px;
+  font-family: "Courier New", Courier, monospace;
 
   a {
     text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
     color: black;
   }
 }
@@ -77,16 +77,16 @@
     transform: rotate(0deg);
   }
   65% {
-    transform: rotate(2deg);
+    transform: rotate(4deg);
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-4deg);
   }
   85% {
-    transform: rotate(2deg);
+    transform: rotate(4deg);
   }
   95% {
-    transform: rotate(-2deg);
+    transform: rotate(-4deg);
   }
   100% {
     transform: rotate(0deg);

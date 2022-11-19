@@ -3,32 +3,65 @@
     <span class="sentence">
       I am
       <span data-controller="tag">
-        <span class="tag name wiggle" data-action="mouseover->tag#unhide mouseout->tag#hide">Ian.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <i class="fa-brands fa-github"></i>
-          <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /Azzzvedo</a>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /ian-r-wiggins/</a>
-        </div>
+        <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+          <span class="tag name wiggle" data-controller="wiggle">Ian.</span>
+          <div class="hidden expand" data-tag-target="expand">
+            <i class="fa-brands fa-github"></i>
+            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /Azzzvedo</a>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /ian-r-wiggins/</a>
+          </div>
+        </span>
       </span>
 
       <span data-controller="tag">
-        <span class="tag name" data-action="mouseover->tag#unhide mouseout->tag#hide">Ian.</span>
+        <span class="tag web-developer" data-action="mouseover->tag#unhide mouseout->tag#hide">Web Developer.</span>
         <div class="hidden expand" data-tag-target="expand">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
         </div>
       </span>
 
-      <span class="tag web-developer">Web Developer.</span>
-      <span class="tag accountant">Accountant.</span>
-      <span class="tag insolveny-administrator">Insolveny Administrator.</span>
-      <span class="tag writer">Writer.</span>
-      <span class="tag chef">Chef.</span>
-      <span class="tag artist">Artist.</span>
-      <span class="tag student">Student.</span>
-      <span class="tag scholar">Scholar.</span>
-      <span class="tag small-child">Small Child.</span>
-      <span class="tag baby">Baby.</span>
+      <span data-controller="tag">
+        <span class="tag accountant" data-action="mouseover->tag#unhide mouseout->tag#hide">Accountant.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
+
+      <span data-controller="tag">
+        <span class="tag insolveny-administrator" data-action="mouseover->tag#unhide mouseout->tag#hide">Insolveny Administrator.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
+
+      <span data-controller="tag">
+        <span class="tag writer" data-action="mouseover->tag#unhide mouseout->tag#hide">Writer.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
+
+      <span data-controller="tag">
+        <span class="tag chef" data-action="mouseover->tag#unhide mouseout->tag#hide">Chef.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
+
+      <span data-controller="tag">
+        <span class="tag artist" data-action="mouseover->tag#unhide mouseout->tag#hide">Artist.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
+
+      <span data-controller="tag">
+        <span class="tag student" data-action="mouseover->tag#unhide mouseout->tag#hide">Student.</span>
+        <div class="hidden expand" data-tag-target="expand">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
+        </div>
+      </span>
     </span>
   </div>
 </div>
