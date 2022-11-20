@@ -3,6 +3,11 @@ body {
   background: rgb(209, 213, 198);
 }
 
+.background-image {
+  height: 100vh;
+  background-image: asset-url("ian.jpg");
+}
+
 // Specific CSS for your home-page
 .sentence {
   font-size: 56px;
@@ -17,15 +22,6 @@ body {
 
 .name {
   opacity: 1;
-}
-
-.expand {
-  padding-left: 1rem;
-  font-size: 48px;
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 0px;
-  padding: 1rem 0rem 2rem 0rem;
-  margin-bottom: 0;
 }
 
 a {
@@ -51,35 +47,14 @@ a {
 .chef {
   opacity: 0.4;
 }
-.artist {
-  opacity: 0.2;
-}
 .student {
-  opacity: 0.1;
-}
-.scholar {
-  opacity: 0.3;
-}
-.small-child {
   opacity: 0.2;
-}
-.baby {
-  opacity: 0.1;
 }
 
 .tag {
   display: block;
   padding: 1rem 0 1rem 0;
 }
-
-// .tag:hover {
-//   border: 1px solid #a0a0a0;
-//   border-radius: 10px;
-//   padding: 0px 16px;
-//   font-family: "Courier New", Courier, monospace;
-//   cursor: pointer;
-//   opacity: 1;
-// }
 
 .img {
   width: 100%;
@@ -125,6 +100,15 @@ a {
   color: $green;
 }
 
+.expand {
+  padding-left: 1rem;
+  font-size: 48px;
+  font-family: $mono-font, Courier, monospace;
+  margin-top: 0px;
+  padding: 1rem 0rem 2rem 0rem;
+  margin-bottom: 0;
+}
+
 .expand > input {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -132,4 +116,14 @@ a {
   border-radius: 2.5rem;
   border: none;
   height: 5rem;
+  font-size: 2rem;
+}
+
+.expand--header {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.expand--para {
+  font-weight: 300;
+  font-size: 1.5rem;
 }

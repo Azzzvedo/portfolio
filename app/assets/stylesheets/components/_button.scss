@@ -1,7 +1,7 @@
 .button {
   margin-top: 0rem;
   margin-bottom: 0px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: $mono-font, Courier, monospace;
   color: $green;
   opacity: 1 !important;
   cursor: pointer;
@@ -10,4 +10,14 @@
     color: $green;
     opacity: 1;
   }
+}
+
+.hover-button:hover {
+  margin-top: 0rem;
+  margin-bottom: 0px;
+  font-family: $mono-font, Courier, monospace;
+  color: $green;
+  opacity: 1 !important;
+  cursor: pointer;
+  transition: color 1s;
 }

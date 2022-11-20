@@ -7,13 +7,13 @@ export default class extends Controller {
   connect() {
     // console.log('tag controller connected');
     this.wiggle()
+    console.log(this.buttonTarget.innerText);
   }
 
   unhide() {
     // console.log("fired");
     this.expandTarget.classList.remove('hidden')
     this.buttonTarget.classList.add('button')
-
     // this.spanTarget.classList.remove('hidden')
   }
 
@@ -21,14 +21,11 @@ export default class extends Controller {
 
     this.expandTarget.classList.add('hidden')
     this.buttonTarget.classList.remove('button')
-
     // this.spanTarget.classList.remove('hidden')
   }
 
   wiggle() {
     if (!this.hasWigglerTarget) return;
-
-    console.log(this.wigglerTarget.innerText);
     const randomTime = this.wigglerTarget.innerText === "Ian." ? 0 : Math.floor(Math.random() * 20) + Math.random() + 1;
     setTimeout(() => {
       this.wigglerTarget.classList.add('wiggle')

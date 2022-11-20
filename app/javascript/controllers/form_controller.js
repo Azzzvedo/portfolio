@@ -16,7 +16,7 @@ export default class extends Controller {
     str = str.charAt(0).toUpperCase() + str.slice(1);
     this.lastTarget.insertAdjacentHTML('beforebegin', `
     <div data-controller="tag">
-    <span class="tag student" data-tag-target="button">${str}.</span>
+    <span class="tag student hover-button" data-tag-target="button">${str}.</span>
       <div class="hidden expand" data-tag-target="expand">
         <p>Nothing to see here!</p>
       </div>
