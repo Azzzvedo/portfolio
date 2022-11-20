@@ -4,7 +4,7 @@
     <div class="sentence" data-controller="form">
 
       <div data-controller="tag">
-        <span data-action="mouseover->tag#unhide mouseout->tag#hide" >
+        <span data-action="mouseover->tag#unhide mouseout->tag#hide">
           <span class="tag">I am <span class="name" data-tag-target="button wiggler">Ian.</span></span>
           <p class="hidden expand" data-tag-target="expand">
 
@@ -83,7 +83,7 @@
             <span class="tag student" data-tag-target="button wiggler">You name it.</span>
             <div class="hidden expand" data-tag-target="expand" >
                 <input type="text" data-form-target="input" data-action="keyup->form#enter">
-                <button class="button" data-action="click->form#add"> Add it!</button>
+                <span class="button" data-action="click->form#add"> Add it!</span>
             </div>
           </span>
       </div>

@@ -1,5 +1,6 @@
 body {
-  background-color: antiquewhite;
+  height: 100vh;
+  background: rgb(209, 213, 198);
 }
 
 // Specific CSS for your home-page
@@ -31,7 +32,7 @@ a {
   text-decoration: none;
   color: black;
   &:hover {
-    color: rgb(16, 0, 96);
+    color: $green;
   }
 }
 
@@ -115,17 +116,20 @@ a {
 .wiggle {
   display: inline-block;
   animation: wiggle 2s infinite;
-  font-weight: bold;
   transition: 1s;
 }
 
 .wiggle:hover {
   animation: none;
   font-weight: lighter;
+  color: $green;
 }
 
 .expand > input {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 0 0.5rem;
+  padding: 0 2.5rem;
+  border-radius: 2.5rem;
+  border: none;
+  height: 5rem;
 }
