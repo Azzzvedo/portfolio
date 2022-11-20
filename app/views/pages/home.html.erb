@@ -1,67 +1,93 @@
+
 <div class="container">
     <div class="sentence-container">
-    <span class="sentence">
-      I am
-      <span data-controller="tag">
+    <div class="sentence" data-controller="form">
+
+      <div data-controller="tag">
+        <span data-action="mouseover->tag#unhide mouseout->tag#hide" >
+          <span class="tag">I am <span class="name" data-tag-target="button wiggler">Ian.</span></span>
+          <p class="hidden expand" data-tag-target="expand">
+
+            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %><i class="fa-brands fa-github" ></i> /Azzzvedo</a>
+
+            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %><i class="fa-brands fa-linkedin-in"></i> /ian-r-wiggins/</a>
+          </p>
+        </span>
+      </div>
+
+      <div data-controller="tag">
         <span data-action="mouseover->tag#unhide mouseout->tag#hide">
-          <span class="tag name wiggle" data-controller="wiggle">Ian.</span>
+          <span class="tag web-developer" data-tag-target="button wiggler">Web Developer.</span>
           <div class="hidden expand" data-tag-target="expand">
-            <i class="fa-brands fa-github"></i>
-            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /Azzzvedo</a>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <a href=""><%= image_tag "ian.jpg", alt: "Le Wagon", class: "hidden" %> /ian-r-wiggins/</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </span>
-      </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag web-developer" data-action="mouseover->tag#unhide mouseout->tag#hide">Web Developer.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag accountant" data-tag-target="button wiggler">Accountant.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag accountant" data-action="mouseover->tag#unhide mouseout->tag#hide">Accountant.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag insolveny-administrator" data-tag-target="button wiggler">Insolveny Administrator.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag insolveny-administrator" data-action="mouseover->tag#unhide mouseout->tag#hide">Insolveny Administrator.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag writer" data-tag-target="button wiggler">Writer.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag writer" data-action="mouseover->tag#unhide mouseout->tag#hide">Writer.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag chef" data-tag-target="button wiggler">Chef.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag chef" data-action="mouseover->tag#unhide mouseout->tag#hide">Chef.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag artist" data-tag-target="button wiggler">Artist.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag artist" data-action="mouseover->tag#unhide mouseout->tag#hide">Artist.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
+      <div data-controller="tag">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag student" data-tag-target="button wiggler">Student.</span>
+            <div class="hidden expand" data-tag-target="expand">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </span>
+      </div>
 
-      <span data-controller="tag">
-        <span class="tag student" data-action="mouseover->tag#unhide mouseout->tag#hide">Student.</span>
-        <div class="hidden expand" data-tag-target="expand">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id debitis aut praesentium numquam eaque nemo quod, esse aliquam blanditiis ipsum magnam maxime reiciendis deserunt corporis commodi repellat odit voluptatem eius.</p>
-        </div>
-      </span>
-    </span>
+      <div data-controller="tag" data-form-target="last">
+          <span data-action="mouseover->tag#unhide mouseout->tag#hide">
+            <span class="tag student" data-tag-target="button wiggler">You name it.</span>
+            <div class="hidden expand" data-tag-target="expand" >
+                <input type="text" data-form-target="input" data-action="keyup->form#enter">
+                <button class="button" data-action="click->form#add"> Add it!</button>
+            </div>
+          </span>
+      </div>
+
+    </div>
   </div>
 </div>

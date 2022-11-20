@@ -1,0 +1,13 @@
+.button {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(115, 115, 115);
+  opacity: 1;
+  cursor: pointer;
+  transition: color 1s;
+  &:hover {
+    color: rgb(16, 0, 96);
+    opacity: 1;
+  }
+}

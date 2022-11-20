@@ -1,27 +1,37 @@
+body {
+  background-color: antiquewhite;
+}
+
 // Specific CSS for your home-page
 .sentence {
   font-size: 56px;
+  margin: 0;
+  font: $body-font;
 }
 
 .sentence-container {
-  margin-top: 2em;
+  margin-top: 5rem;
+  line-height: 3rem;
 }
 
 .name {
   opacity: 1;
-
-  &:hover {
-    font-family: "Courier New", Courier, monospace;
-  }
 }
 
 .expand {
+  padding-left: 1rem;
   font-size: 48px;
   font-family: "Courier New", Courier, monospace;
+  margin-top: 0px;
+  padding: 1rem 0rem 2rem 0rem;
+  margin-bottom: 0;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: rgb(16, 0, 96);
   }
 }
 
@@ -29,22 +39,22 @@
   opacity: 1;
 }
 .accountant {
-  opacity: 0.9;
-}
-.insolveny-administrator {
   opacity: 0.8;
 }
-.writer {
+.insolveny-administrator {
   opacity: 0.7;
 }
-.chef {
-  opacity: 0.6;
-}
-.artist {
+.writer {
   opacity: 0.5;
 }
-.student {
+.chef {
   opacity: 0.4;
+}
+.artist {
+  opacity: 0.2;
+}
+.student {
+  opacity: 0.1;
 }
 .scholar {
   opacity: 0.3;
@@ -56,10 +66,19 @@
   opacity: 0.1;
 }
 
-.tag:hover {
-  opacity: 1;
-  font-family: "Courier New", Courier, monospace;
+.tag {
+  display: block;
+  padding: 1rem 0 1rem 0;
 }
+
+// .tag:hover {
+//   border: 1px solid #a0a0a0;
+//   border-radius: 10px;
+//   padding: 0px 16px;
+//   font-family: "Courier New", Courier, monospace;
+//   cursor: pointer;
+//   opacity: 1;
+// }
 
 .img {
   width: 100%;
@@ -77,16 +96,16 @@
     transform: rotate(0deg);
   }
   65% {
-    transform: rotate(4deg);
+    transform: rotate(2deg);
   }
   75% {
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
   }
   85% {
-    transform: rotate(4deg);
+    transform: rotate(2deg);
   }
   95% {
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
   }
   100% {
     transform: rotate(0deg);
@@ -96,8 +115,17 @@
 .wiggle {
   display: inline-block;
   animation: wiggle 2s infinite;
+  font-weight: bold;
+  transition: 1s;
 }
 
 .wiggle:hover {
   animation: none;
+  font-weight: lighter;
+}
+
+.expand > input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
 }
