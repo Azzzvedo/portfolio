@@ -20,16 +20,16 @@ body {
   line-height: 3rem;
 }
 
-.name {
-  opacity: 1;
-}
-
 a {
   text-decoration: none;
   color: black;
   &:hover {
     color: $green;
   }
+}
+
+.name {
+  opacity: 1;
 }
 
 .web-developer {
@@ -56,38 +56,6 @@ a {
   padding: 1rem 0 1rem 0;
 }
 
-.img {
-  width: 100%;
-}
-
 .hidden {
   display: none;
-}
-
-.expand {
-  padding-left: 1rem;
-  font-size: 48px;
-  font-family: $mono-font, Courier, monospace;
-  margin-top: 0px;
-  padding: 1rem 0rem 2rem 0rem;
-  margin-bottom: 0;
-}
-
-.expand > input {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0 2.5rem;
-  border-radius: 2.5rem;
-  border: none;
-  height: 5rem;
-  font-size: 2rem;
-}
-
-.expand--header {
-  font-weight: 400;
-  font-size: 2rem;
-}
-.expand--para {
-  font-weight: 300;
-  font-size: 1.5rem;
 }
