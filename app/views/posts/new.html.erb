@@ -1,0 +1,45 @@
+<div class="container">
+  <h1>New Article</h1>
+
+  <%= form_with model: @post, class: "post-form" do |form| %>
+    <div>
+      <%= form.text_field :title, placeholder: "Title" %>
+    </div>
+
+    <div>
+      <%= form.text_area :content, placeholder: "Content" %>
+    </div>
+
+    <div>
+      <%= form.submit 'Submit post', class: 'button' %>
+    </div>
+  <% end %>
+
+  <hr>
+  <code>def method; end</code>
+  <%= form_with model: message do |form| %>
+    <div class="field">
+      <%= form.label :content %>
+      <%= form.rich_text_area :content %>
+    </div>
+  <% end %>
+  <%# <div>
+    <div data-controller="custom-text-area">
+      <p>
+        <span
+            contenteditable="true"
+            data-custom-text-area-target="line"
+            tabindex="0"
+            placeholder="skdhflasdh"
+        ></span>
+
+
+        <span
+          data-action="click->custom-text-area#setFocus"
+          data-custom-text-area-target="cursor"
+        >Type here</span>
+      </p>
+    </div>
+  </div> %>
+
+</div>

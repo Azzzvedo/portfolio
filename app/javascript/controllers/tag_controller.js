@@ -2,25 +2,25 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="tag"
 export default class extends Controller {
-  static targets = ["expand", "wiggler", "button"]
+  static targets = ["expand", "wiggler", "link"]
 
   connect() {
     // console.log('tag controller connected');
     this.wiggle()
-    console.log(this.buttonTarget.innerText);
+    console.log(this.linkTarget.innerText);
   }
 
   unhide() {
     // console.log("fired");
     this.expandTarget.classList.remove('hidden')
-    this.buttonTarget.classList.add('button')
+    this.linkTarget.classList.add('link')
     // this.spanTarget.classList.remove('hidden')
   }
 
   hide() {
 
     this.expandTarget.classList.add('hidden')
-    this.buttonTarget.classList.remove('button')
+    this.linkTarget.classList.remove('link')
     // this.spanTarget.classList.remove('hidden')
   }
 
